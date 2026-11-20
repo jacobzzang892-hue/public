@@ -3,6 +3,6 @@
 NBA 선수가 코트에 있을 때 팀 득실에 주는 영향을 박스스코어와 플레이바이플레이로 계산한 지수입니다.
 칼럼 「AI를 활용해서 농구에서 선수별 경기 영향력을 정확하게 평가할 수 있을까?」의 실습용 사이트입니다.
 
-- 사이트: https://jacobzzang892-hue.github.io/court-impact/
+- 사이트: https://jacobzzang892-hue.github.io/public/
 - 원자료: ESPN 경기 기록 (sportsdataverse 공개 자료, 2026-11-06·07 내려받음)
 - 비공식 지표입니다. 계산 방법과 한계는 사이트의 '계산 방법' 탭에 있습니다.

@@ -462,7 +462,7 @@ table.cmp th { white-space: normal; }
     </div>
     <div class="fb-share">
       <label for="siteUrl">이 사이트 주소</label>
-      <div class="fb-url"><input id="siteUrl" type="text" readonly value="https://jacobzzang892-hue.github.io/court-impact/"><button type="button" class="btn" id="copyUrl">주소 복사</button></div>
+      <div class="fb-url"><input id="siteUrl" type="text" readonly value="https://jacobzzang892-hue.github.io/public/"><button type="button" class="btn" id="copyUrl">주소 복사</button></div>
       <span class="note" id="copyNote">지금 보고 있는 탭까지 담은 주소가 복사됩니다. 로그인하지 않은 사람도 이 주소로 바로 열 수 있습니다.</span>
     </div>
   </div>
@@ -1759,17 +1759,8 @@ function renderMethod() {
 
     <h3>이 지수가 못 하는 것</h3>
     <ul>
-      <li>늘 같이 뛰는 두 선수는 RAPM이 둘을 잘 가르지 못합니다. 따로 뛴 시간이 적으면 벌점 때문에 비슷한 값으로 나뉩니다.</li>
-      <li>RAPM은 한 시즌 자료만 쓰고 모든 선수를 평균(0)으로 끌어당깁니다. 출전이 적은 신인이나 후보는 실제보다 평균에 가깝게 나옵니다.</li>
-      <li>수비는 스틸·블록·수비 리바운드와 RAPM으로만 봅니다. 상대 에이스를 막는 개인 수비는 따로 잡히지 않습니다.</li>
       <li>파울은 좋은 파울(속공을 끊는 파울, 쉬운 득점을 막는 파울)과 나쁜 파울을 구분하지 못합니다. 골밑을 지키는 센터는 구조적으로 파울이 많아 이 축에서 손해를 봅니다.</li>
-      <li>박스스코어 다섯 축은 경기 단위 기록이라 가비지 타임에 쌓은 기록을 따로 빼지 못합니다. 그 영향은 작았습니다('고려 항목' 탭). 출전이 적은 후보 선수가 박스스코어로 과대평가되는 경향은 출전 시간 축으로 바로잡았습니다.</li>
-      <li>출전 시간 축은 감독의 판단을 빌려 온 값입니다. 감독이 틀리면 지수도 같은 쪽으로 틀리고, '감독의 기용이 맞았나'를 이 지수로 판단하면 순환 논리가 됩니다. 그런 비교에는 가중치 조정에서 출전 시간을 0으로 두고 보세요.</li>
       <li>클러치 상황의 활약은 따로 점수를 주지 않습니다. 한 시즌 클러치 표본이 선수당 100포제션 안팎이라 우연과 실력을 가를 수 없어서입니다.</li>
-      <li>2단계의 상대 보정은 팀 단위입니다. 그날 상대 팀에서 누가 뛰었는지는 RAPM에서만 반영합니다.</li>
-      <li>신뢰도 곡선 ρ(m) = m/(m+K)는 모든 선수의 실력 분산이 같다고 가정한 근사입니다.</li>
-      <li>플레이오프 지수의 득실 영향 축은 정규시즌 RAPM에 크게 기댑니다. 플레이오프에서만 달라진 모습은 박스스코어 다섯 축과 'RAPM이 바뀐 폭'으로 일부만 드러납니다.</li>
-      ${norp.length ? `<li>${norp[0].label} ~ ${norp[norp.length - 1].label} 시즌의 지수는 득실 영향이 없는 여섯 축 지수라 일곱 축 시즌과 바로 비교하면 안 됩니다. 진행 중인 시즌은 몇 경기 분량이라 참고용입니다.</li>` : ''}
     </ul>
   </div>`;
   typesetMath(el);
